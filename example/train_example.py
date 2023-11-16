@@ -67,7 +67,7 @@ epochs=1
 print("Training for", epochs, "epochs")
 
 
-generator, discriminiator = fit(train_dataset, epochs, test_dataset)
+generator, discriminiator = fit(train_dataset, epochs)
 
 #Optional: Save weights
 #generator.save_weights("data/training_weights.h5")

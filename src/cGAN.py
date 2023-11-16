@@ -6,7 +6,7 @@ import os
 import time
 import sys
 from matplotlib import pyplot as plt
-from IPython import display
+#from IPython import display
 #from TFGenerator import Get_Data
 
 ###Load train/test data and labels in TF Dataset format. See TFGenerator.py for more info on Get_Data() - section is unused for tutorial purposes but is necessary when running larger training jobs on supercomputing clusters #############
