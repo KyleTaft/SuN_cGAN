@@ -231,7 +231,7 @@ def train_step(input_image, target, epoch):
     tf.summary.scalar('disc_loss', disc_loss, step=epoch)
   
 
-def fit(train_ds, epochs, test_ds):
+def fit(train_ds, epochs):
   for epoch in range(epochs):
     start = time.time()
 
@@ -252,5 +252,7 @@ def fit(train_ds, epochs, test_ds):
     print ('Time taken for epoch {} is {} sec\n'.format(epoch + 1,
                                                         time.time()-start))
   checkpoint.save(file_prefix = checkpoint_prefix)
+
+  return generator, discriminator
 
 
