@@ -44,7 +44,7 @@ labels_test=np.concatenate((singles_labels_test, doubles_labels_test), axis=0)
 #Standardize train and test datasets to zero mean and unit variance 
 
 data_train=(data_train-np.mean(data_train))/np.std(data_train)
-data_test=(data_test-np.mean(data_test))/np.std(data_test)
+data_test=(data_test-np.mean(data_train))/np.std(data_train)
 
 print(data_train.shape, data_test.shape)
 #Create Tensorflow Dataset structures from Numpy Arrays
